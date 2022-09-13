@@ -1,0 +1,35 @@
+.conhecimentos-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+}
+.conhecimentos-titulo{
+    justify-self: center;
+    margin: 30px 0;
+    font-size: 2rem;
+    font-style: italic;
+    color: #4831d4;
+    border-bottom: 3px solid #ccf381;
+    text-transform: lowercase;
+}
+@media (max-width: 650px){
+   .conhecimentos-titulo h1{
+    font-size: 2rem;
+   }
+}
+@media (max-width: 650px){
+    .fa-media{
+        font-size: 1.8rem !important;
+    }
+}
+.conhecimentos-img{
+    max-width: 900px;
+}
+.conhecimentos-icons ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    color: #453BBA;
+}

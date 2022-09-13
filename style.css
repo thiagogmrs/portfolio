@@ -1,0 +1,27 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*global*/
+@import url(./global/global.css);
+
+/*header*/
+@import url(./header/header.css);
+
+/*conhecimentos*/
+@import url(conhecimentos/conhecimentos.css);
+
+/*formação*/
+@import url(./formacao/formacao.css);
+
+/*projetos*/
+@import url(./projetos/projetos.css);
+
+/*formulário*/
+@import url(./formulario/form.css);
+
+/*footer*/
+@import url(./footer/footer.css);
+
+
+
+
