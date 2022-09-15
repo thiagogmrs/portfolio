@@ -149,7 +149,12 @@
     grid-column: 2;
     font-family: var(--font-primary);
 }
-
+@media (max-width: 950px){
+    .form button{
+        background: #4831d4;
+        color: #fff;
+    }
+}
 @media (max-width: 650px){
     .form button{
         grid-column: 1;
