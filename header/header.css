@@ -164,7 +164,7 @@
 }
 @media (max-width: 650px){
     .img-principal{
-        max-width: 300px;
+        max-width: 250px;
         grid-row: 3;
     }
 }
