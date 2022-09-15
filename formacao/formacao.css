@@ -3,6 +3,7 @@
     margin: 0 auto;
     display: grid;
     padding: 60px;
+    overflow-x: hidden;
 }
 .formacao-container div:nth-child(1){
     justify-self: start;

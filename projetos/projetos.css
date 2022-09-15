@@ -2,6 +2,7 @@
     background: #f8f8f8;
     display: grid;
     padding: 30px;
+    overflow-x: hidden;
  }
  .projetos-titulo{
     justify-self: center;
@@ -24,6 +25,7 @@
     margin: 0 auto;
     gap: 30px;
     text-align: center;
+    overflow-x: hidden;
 }
 @media (max-width: 980px){
 }
