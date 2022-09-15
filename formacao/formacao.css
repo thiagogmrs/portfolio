@@ -29,10 +29,12 @@
     font-size: 1.5rem;
     }
 }
+.formacao-container div ul li{
+    padding: 10px;
+}
 .formacao-container div a{
     color: #4831d4;
-    display: block;
-    padding: 10px;
+    margin-bottom: 15px;
     font-size: 1rem;
     text-decoration: underline;
 }

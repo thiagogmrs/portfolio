@@ -34,6 +34,7 @@
 }
 .projetos-item img{
     width: 100%;
+    border-radius: 10px;
 }
 .projetos-info{
     justify-self: center;
