@@ -171,6 +171,11 @@
 .img-principal:hover{
     transform: scale(1.2);
 }
+@media (max-width: 650px){
+    .img-principal:hover{
+        display: none;
+    }
+}
 @keyframes moveLetter{
     from{
         transform: translateY(-300px);
