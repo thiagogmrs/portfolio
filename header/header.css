@@ -152,6 +152,7 @@
     align-self: center;
     transition: 0.4s ease;
     border-radius: 10px;
+    padding: 30px;
     /* box-shadow: -30px 0px 1px 30px #ccf381; */
 }
 
@@ -164,7 +165,7 @@
 }
 @media (max-width: 650px){
     .img-principal{
-        max-width: 250px;
+        max-width: 300px;
         grid-row: 3;
     }
 }
