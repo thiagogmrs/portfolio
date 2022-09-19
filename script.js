@@ -3,10 +3,6 @@ const btn = document.querySelector('.hamburguer');
 const ativar = document.querySelector('.nav');
 let trocarCor = document.querySelector('.line1');
 let trocarCor2 = document.querySelector('.line2');
-const lista = document.querySelectorAll('.conhecimentos-icons ul li')
-const alturaDaTela = window.innerHeight;
-console.log(alturaDaTela);
-
 
 btn.addEventListener('click', ()=>{
     ativar.classList.toggle('ativar');
@@ -14,15 +10,6 @@ btn.addEventListener('click', ()=>{
     trocarCor2.classList.toggle('changeColor');
 
 });
-
-
-
- function coordenadasScroll(){
-    console.log(scrollY);
-};
-
-window.addEventListener('scroll', coordenadasScroll);
-
 
 //back-to-top
 
