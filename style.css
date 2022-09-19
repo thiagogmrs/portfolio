@@ -13,6 +13,9 @@
 /*formação*/
 @import url(./formacao/formacao.css);
 
+/*orçamento*/
+@import url(./orcamento/orcamento.css);
+
 /*projetos*/
 @import url(./projetos/projetos.css);
 

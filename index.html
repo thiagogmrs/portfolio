@@ -137,6 +137,39 @@
         </div>
     </section>
 
+<!-- sessão orçamento -->
+    <section class="orcamento" id="orcamento" aria-label="sessão orçamento">
+        <div class="orcamento-wrapper">
+            <h1>Orçamento</h1>
+            <form action="page.php" method="post" id="form">
+               <div>
+                    <label for="qtde-pages">Quantidade de Páginas</label>
+                    <input type="number" name="qtde-pages" id="qtde-pages" placeholder="1" required>
+               </div>
+               <div>
+                    <label for="js">Preciso de Script</label>
+                    <input type="checkbox" name="js" id="js">
+               </div>
+               <div>
+                    <label for="layout-sim">Preciso de Layout</label>
+                    <input type="radio" name="layout" id="layout-sim">
+                    <label for="layout-nao">Não Preciso de Layout</label>
+                    <input type="radio" name="layout" id="layout-nao">
+               </div>
+               <div>
+                <label for="prazo">Prazo 5 Semanas</label>
+                <input type="range" name="prazo" id="prazo" min="2" max="10">
+               </div>
+               <div>
+                    <label id="preco">R$ 0,00</label>
+               </div>
+               <div class="btn-wrapper">
+                    <button type="submit" class="btn" id="btn" aria-labelledby="botão enviar oraçamento">Enviar</button>
+               </div>
+            </form>
+        </div>
+    </section>
+
 <!-- formulário -->
     <section class="formulario" id="formulario" aria-label="formulário de contato">
         <div class="formulario-container">
