@@ -94,6 +94,8 @@ img{
     .contain-menu{
         width: 50px;
         height: 20px;
+        right: 30px;
+        top: 20px;
     }
 }
 #checkbox-menu{
