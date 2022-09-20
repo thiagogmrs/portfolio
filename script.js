@@ -1,14 +1,9 @@
-//hamburguer
-const btn = document.querySelector('.hamburguer');
-const ativar = document.querySelector('.nav');
-let trocarCor = document.querySelector('.line1');
-let trocarCor2 = document.querySelector('.line2');
-
+const btn = document.querySelector('#label-check');
+const contain = document.querySelector('.contain-menu');
 btn.addEventListener('click', ()=>{
-    ativar.classList.toggle('ativar');
-    trocarCor.classList.toggle('changeColor');
-    trocarCor2.classList.toggle('changeColor');
-
+  contain.classList.toggle('on-menu');
+  document.getElementById('nav').classList.toggle('ativar')
+  
 });
 
 

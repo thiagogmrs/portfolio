@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- global -->
-    <nav class="nav ativar" id="nav" aria-label="navegação">
+    <nav class="nav" id="nav" aria-label="navegação">
         <ul class="menu">
             <li><a href="#conhecimentos">Meus Conhecimentos</a></li>
             <li><a href="#formacao">Formação</a></li>
@@ -26,10 +26,13 @@
             <a href="https://github.com/thiagogmrs" target="_blank"><div class="icones-item"><span>Gh</span></div></a>
         </nav>
     </nav>
-    <button class="hamburguer" aria-label="menu-hamburguer">
-        <span class="line1 changeColor" id=""></span> 
-        <span class="line2 changeColor" id=""></span>     
-    </button>
+    <div class="contain-menu" aria-label="menu links">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu" id="label-check">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 
 <!-- header -->
     <div class="header-bg">
@@ -141,7 +144,7 @@
     <section class="orcamento" id="orcamento" aria-label="sessão orçamento">
         <div class="orcamento-wrapper">
             <h1>Orçamento</h1>
-            <form action="/" method="post" id="form">
+            <form action="page.php" method="post" id="form">
                <div>
                     <label for="qtde-pages">Quantidade de Páginas</label>
                     <input type="number" name="qtde-pages" id="qtde-pages" placeholder="1" required>
