@@ -151,7 +151,7 @@ img{
 
 @keyframes moveAnimation{
     from{
-        transform: translateY(-300px);
+        transform: translateY(-50px);
     }
     to{
         transform: translateY(0px);
