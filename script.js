@@ -8,9 +8,7 @@ btn.addEventListener('click', ()=>{
 
 
 document.querySelector('#qtde-pages').addEventListener('change', updateValue)
-document.querySelector('#js').addEventListener('change', updateValue)
 document.querySelector('#layout-sim').addEventListener('change', updateValue)
-document.querySelector('#layout-nao').addEventListener('change', updateValue)
 document.querySelector('#prazo').addEventListener('change', ()=> {
      const prazo = document.querySelector('#prazo').value
      document.querySelector('label[for=prazo]').innerHTML = `Prazo ${prazo} Semanas`
@@ -19,13 +17,9 @@ document.querySelector('#prazo').addEventListener('change', ()=> {
 
 function updateValue(){
     const qtdePages = document.querySelector('#qtde-pages').value
-    const needJS = document.querySelector('#js').checked
     const needLayout = document.querySelector('#layout-sim').checked
     const prazo = document.querySelector('#prazo').value
     let price = qtdePages * 100
-    if(needJS){
-        price = price + (price * 50/100)
-    }
     if(needLayout){
         price = price + 500
     }
