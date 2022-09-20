@@ -8,6 +8,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css"/>
     <title>Thiago Guimarães | Front end</title>
 </head>
@@ -28,7 +31,7 @@
     </nav>
     <div class="contain-menu" aria-label="menu links">
         <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu" id="label-check">
+        <label for="checkbox-menu" id="label-check" aria-label="menu">
           <span></span>
           <span></span>
           <span></span>
@@ -72,13 +75,6 @@
                 <div class="img-html">
                     <img src="./img/html.svg" alt="html ilustração"></img>
                 </div>
-            </div>
-            <div class="conhecimentos-icons anime anime-init">
-                <ul>
-                    <li><i class="fa-brands fa-js fa-3x fa-media cor-1"></i></li>
-                    <li><i class="fa-brands fa-css3-alt fa-3x fa-media cor-1"></i></li>
-                    <li><i class="fa-brands fa-html5 fa-3x fa-media cor-1"></i></li>
-                </ul>
             </div>
         </div>
     </section>
@@ -144,20 +140,15 @@
     <section class="orcamento" id="orcamento" aria-label="sessão orçamento">
         <div class="orcamento-wrapper">
             <h1>Orçamento</h1>
-            <form action="page.php" method="post" id="form">
+            <form action="/" method="post" id="form">
                <div>
                     <label for="qtde-pages">Quantidade de Páginas</label>
                     <input type="number" name="qtde-pages" id="qtde-pages" placeholder="1" required>
                </div>
                <div>
-                    <label for="js">Preciso de Script</label>
-                    <input type="checkbox" name="js" id="js">
-               </div>
-               <div>
                     <label for="layout-sim">Preciso de Layout</label>
-                    <input type="radio" name="layout" id="layout-sim">
-                    <label for="layout-nao">Não Preciso de Layout</label>
-                    <input type="radio" name="layout" id="layout-nao">
+                    <input type="checkbox" name="layout" id="layout-sim">
+
                </div>
                <div>
                 <label for="prazo">Prazo 5 Semanas</label>
@@ -165,9 +156,6 @@
                </div>
                <div>
                     <label id="preco">R$ 0,00</label>
-               </div>
-               <div class="btn-wrapper">
-                    <button type="submit" class="btn" id="btn" aria-labelledby="botão enviar oraçamento">Enviar</button>
                </div>
             </form>
         </div>
