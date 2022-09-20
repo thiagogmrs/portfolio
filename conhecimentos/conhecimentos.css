@@ -4,6 +4,7 @@
     display: grid;
     justify-content: center;
     padding: 30px;
+    overflow-x: hidden;
 }
 .conhecimentos-titulo{
     justify-self: center;
@@ -29,6 +30,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
     height: 400px;
+    padding: 30px;
 }
 @media (max-width: 740px){
     .conhecimentos-img{
