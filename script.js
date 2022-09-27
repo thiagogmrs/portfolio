@@ -27,7 +27,7 @@ function updateValue(){
     price *= 1 + urgencyRate
 
 
-    document.querySelector('#preco').innerHTML = `R$ ${price.toFixed(2).replace('.', ','}`
+    document.querySelector('#preco').innerHTML = `R$ ${price.toFixed(2).replace('.', ',')}`
 }
 
 
