@@ -25,49 +25,29 @@
         font-size: 1.8rem !important;
     }
 }
-.conhecimentos-img{
+.conhecimentos-img, .conhecimentos-icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
-    height: 400px;
+    gap: 15px;
     padding: 30px;
 }
-@media (max-width: 740px){
+
+@media (max-width: 850px){
     .conhecimentos-img{
-        grid-template-columns: 1fr 1fr;
-        height: 420px;
+    display: none;
     }
 }
-.conhecimentos-img div:nth-child(1){
-    grid-column: 1;
+.conhecimentos-icons{
+    display: none;
 }
-.conhecimentos-img div:nth-child(2){
-    align-self: center;
-}
-.conhecimentos-img div:nth-child(3){
-    grid-column: 3;
-    min-width: 150px;
-}
-@media (max-width: 740px){
-    .conhecimentos-img div:nth-child(1){
-        grid-column: 1;
-        grid-row: 1;
-        min-width: 200px;
-    }
-    .conhecimentos-img div:nth-child(2){
-        grid-column: span 2;
-        justify-self: center;
-        max-width: 250px;
-    }
-    .conhecimentos-img div:nth-child(3){
-        grid-column: 2;
-        grid-row: 1;
-        min-width: 200px;
+@media (max-width: 850px){
+    .conhecimentos-icons{
+        display: grid;
     }
 }
-.conhecimentos-icons ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    color: #453BBA;
+@media (max-width: 650px){
+    .conhecimentos-icons i{
+        font-size: 2rem !important;
+    }
 }

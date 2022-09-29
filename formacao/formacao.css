@@ -4,6 +4,7 @@
     display: grid;
     padding: 60px;
     overflow-x: hidden;
+    opacity: 0.9;
 }
 .formacao-container div:nth-child(1){
     justify-self: start;
@@ -46,9 +47,28 @@
 .formacao-container div:nth-child(2){
     justify-self: end;  
     text-align: center;
+    height: 200px;
 }
 .formacao-container div:nth-child(2) p {
    text-decoration: underline;
    color: #4831d4;
 }
 
+.btn-certificado{
+    border: none;
+    padding: 10px;
+    background: #4831d4;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn-certificado:hover{
+    background: #31238b;
+}
+.menu-certificado{
+    display: none;
+}
+.ativo{
+    display: block;
+}

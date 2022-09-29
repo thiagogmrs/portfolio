@@ -1,3 +1,4 @@
+//hamburguer
 const btn = document.querySelector('#label-check');
 const contain = document.querySelector('.contain-menu');
 btn.addEventListener('click', ()=>{
@@ -7,6 +8,23 @@ btn.addEventListener('click', ()=>{
 });
 
 
+
+function showCertificado(){
+  const menuCertificado = document.querySelector('.menu-certificado').classList.toggle('ativo');
+  if(menuCertificado){
+    document.querySelector('.btn-certificado').innerHTML = 'Fechar'
+  }
+  else{
+    document.querySelector('.btn-certificado').innerHTML = 'Visualizar'
+  }
+
+}
+
+
+
+
+
+//orçamento
 document.querySelector('#qtde-pages').addEventListener('change', updateValue)
 document.querySelector('#layout-sim').addEventListener('change', updateValue)
 document.querySelector('#prazo').addEventListener('change', ()=> {
@@ -23,7 +41,7 @@ function updateValue(){
     if(needLayout){
         price = price + 500
     }
-    let urgencyRate = 1 - prazo*0.1;
+    let urgencyRate = 1 - prazo*0.1;  
     price *= 1 + urgencyRate
 
 
