@@ -45,6 +45,9 @@
     border-radius: 50%;
     margin: 0px 0px 5px 3px;
 }
+.footer-social{
+    align-self: end;
+}
 .footer-social ul{
     display: flex;
     gap: 30px;
