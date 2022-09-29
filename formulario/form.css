@@ -9,7 +9,11 @@
     background: linear-gradient(180deg, rgba(72,49,212,1) 19%, rgba(204,243,129,1) 19%);
   }
 }
-
+@media (max-width: 400px){
+    .formulario{
+      background: linear-gradient(180deg, rgba(72,49,212,1) 14%, rgba(204,243,129,1) 14%);
+    }
+  }
 .formulario::after{
     content: "";
     background: #fff;
@@ -63,6 +67,11 @@
 @media (max-width: 650px){
     .formulario-container h1{
         font-size: 1rem;
+    }
+}
+@media (max-width: 400px){
+    .formulario-container h1{
+        font-size: 0.6rem;
     }
 }
 .formulario-container h1::after{
