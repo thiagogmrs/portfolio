@@ -8,7 +8,7 @@ btn.addEventListener('click', ()=>{
 });
 
 
-
+//button certificado
 function showCertificado(){
   const menuCertificado = document.querySelector('.menu-certificado').classList.toggle('ativo');
   if(menuCertificado){
