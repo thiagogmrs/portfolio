@@ -1,17 +1,20 @@
 .orcamento{
     background: #f8f8f8;
-    padding: 80px;
     overflow-x: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-height: 500px;
     opacity: 0.9;
 }
 .orcamento-wrapper{
-    max-width: 1200px;
+    max-width: 760px;
     padding: 30px;
     margin: 0 auto;
     border: 3px solid #4831d4;
     border-radius: 10px;
     position: relative;
-    display: grid;
+    display: grid;  
 }
 
 @media (max-width: 430px){
@@ -120,7 +123,7 @@ input[type="radio"]{
 
 #prazo{
     -webkit-appearance: none;
-    width: 300px;
+    width: 100px;
     height: 10px;
     background: #ccf381;
     border-radius: 10px;
@@ -132,7 +135,7 @@ input[type="radio"]{
 }
 @media (max-width: 510px){
     #prazo{
-        width: 150px;
+        width: 100px;
     }
 }
 #prazo::-webkit-slider-thumb {
