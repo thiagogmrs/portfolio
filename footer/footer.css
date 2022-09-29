@@ -48,6 +48,11 @@
 .footer-social{
     justify-self: end;
 }
+@media (max-width: 650px){
+      .footer-social{
+       justify-self: center;
+       }
+}
 .footer-social ul{
     display: flex;
     gap: 30px;
