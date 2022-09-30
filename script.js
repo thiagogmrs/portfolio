@@ -44,10 +44,10 @@ function updateValue(){
     let urgencyRate = 1 - prazo*0.1;  
     price *= 1 + urgencyRate
 
-    
+    document.querySelector('#preco').innerHTML = `${price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
+
 }
 
-  document.querySelector('#preco').innerHTML = `${price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
 
 
 //back-to-top
