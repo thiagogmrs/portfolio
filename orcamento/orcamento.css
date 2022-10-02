@@ -1,166 +1,107 @@
 .orcamento{
-    background: #f8f8f8;
-    overflow-x: hidden;
+    background: #f7f7f7;
+    padding: 30px;
     display: grid;
-    justify-items: center;
-    align-items: center;
-    min-height: 500px;
-    opacity: 0.9;
-}
-.orcamento-wrapper{
-    max-width: 760px;
-    padding: 30px;
-    margin: 0 auto;
-    border: 3px solid #4831d4;
-    border-radius: 10px;
-    position: relative;
-    display: grid;  
-}
 
-@media (max-width: 430px){
-    .orcamento-wrapper{
-        min-width: 300px;
-        justify-self: center;
-    }
 }
-.orcamento-wrapper h1{
-    text-align: center;
+.form-wrapper{
+    width: 1200px;
+    margin: 0 auto;
     padding: 30px;
-    position: absolute;
-    top: -65px;
-    background: #4831d4;
-    left: 150px;
-    color: #fff;
-    border-radius: 10px;
 }
-@media (max-width: 635px){
-    .orcamento-wrapper h1{
-        left: 80px;
+@media (max-width: 1230px){
+    .form-wrapper{
+        width: 800px;
     }
 }
-@media (max-width: 510px){
-    .orcamento-wrapper h1{
-        top: -45px;
-        left: 20px;
-        padding: 15px;
-        font-size: 1.2rem;
+@media (max-width: 830px){
+    .form-wrapper{
+        width: 500px;
+    }
+}
+@media (max-width: 570px){
+    .form-wrapper{
+        width: 400px;
+    }
+}
+@media (max-width: 460px){
+    .form-wrapper{
+        width: 300px;
     }
 }
 #form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 80px);
+    display: grid; 
+    grid-template-columns: 25% 15%;
+    grid-template-rows: 50px 50px 50px 100px;
+    gap: 15px;
     align-items: center;
-    justify-items: center;
-    color: #4831d4;
-    font-size: 1.2rem;
+    justify-content: center;
+    border: 3px solid #4831d4;
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
 }
-@media (max-width: 870px){
+@media (max-width: 840px){
     #form{
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 60px 70px 60px;
-    font-size: 0.8rem;
-    gap: 10px;
+        grid-template-columns: 35% 25%;
+        grid-template-rows: auto;
     }
 }
-input[type="number"],
-input[type="checkbox"],
-input[type="radio"]{
-    height: 30px;
-    width: 60px;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: none;
+@media (max-width: 540px){
+    #form{
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+    }
 }
-@media (max-width: 870px){
-    input[type="number"],
-    input[type="checkbox"],
-    input[type="radio"]{
-    height: 15px;
-    width: 50px;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: none;
-}
+input[type=checkbox]{
+    justify-self: start;
 }
 
-#form div:nth-child(1){
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#form h1{
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    background: #4831d4;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
 }
-@media (max-width: 510px){
-    #form div:nth-child(1){
-        gap: 10px;
+@media (max-width: 540px){
+    #form h1{
+    padding: 15px;
+    top: -40px
     }
 }
-#form div:nth-child(2){
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    align-items: center;
-}
+#form label{
+    color: #4831d4;
 
-#form div:nth-child(3){
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
-@media (max-width: 510px){
-    #form div:nth-child(3){
-        flex-direction: column;
-        gap: 25px;
+#form span{
+    justify-self: start;
+    align-self: start;
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 600;
+}
+@media (max-width: 540px){
+    #form span{
+       font-size: 1rem;
     }
 }
-#form div:nth-child(4){
-    font-size: 2rem;
-}
-@media (max-width: 510px){
-    #form div:nth-child(4){
-        font-size: 1.2rem;
-    }
-}
-
 #prazo{
     -webkit-appearance: none;
-    width: 100px;
+    width: 100%;
     height: 10px;
     background: #ccf381;
     border-radius: 10px;
 }
-@media (max-width: 600px){
-    #prazo{
-        width: 200px;
-    }
-}
-@media (max-width: 510px){
-    #prazo{
-        width: 100px;
-    }
-}
+
 #prazo::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%; 
     background: #4831d4;
     cursor: pointer;
 }
-@media (max-width: 510px){
-    #prazo::-webkit-slider-thumb {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-#btn{
-    margin: 0;
-}
-
-@media (max-width: 510px){
-    #btn{
-        max-width: 120px;
-    }
-}
-  

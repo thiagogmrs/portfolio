@@ -38,15 +38,27 @@ function updateValue(){
     const needLayout = document.querySelector('#layout-sim').checked
     const prazo = document.querySelector('#prazo').value
     let price = qtdePages * 100
+    if(qtdePages){
+      document.querySelector('#preco').style.background = '#ccf381';
+      document.querySelector('#preco').style.color = '#4831d4'
+    }
     if(needLayout){
         price = price + 500
+        document.querySelector('#preco').style.background = '#ccf381'
+        document.querySelector('#preco').style.color = '#4831d4'
+
+    }
+    if(prazo){
+      document.querySelector('#preco').style.background = '#ccf381'
+      document.querySelector('#preco').style.color = '#4831d4'
     }
     let urgencyRate = 1 - prazo*0.1;  
     price *= 1 + urgencyRate
 
-    document.querySelector('#preco').innerHTML = `${price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
 
+    document.querySelector('#preco').innerHTML = `${price.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
 }
+
 
 
 
